@@ -6,7 +6,7 @@
 
 import requests
 import pandas as pd
-#import plotly.express as px
+import plotly.express as px
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import MinMaxScaler
@@ -47,7 +47,7 @@ df['normalized_cases'] = scaler.fit_transform(df[['cases']])  # Normalize and sc
 # In[5]:
 
 
-#fig = px.line(df, x='date', y='cases', title='COVID-19 Cases Over Time')  # Create a line plot
+fig = px.line(df, x='date', y='cases', title='COVID-19 Cases Over Time')  # Create a line plot
 
 
 # In[6]:
